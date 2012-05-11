@@ -4,9 +4,6 @@
 
 jQuery(document).ready(function($) {
 
-	//Help popover
-	$('#help_popover').popover('toggle');
-
 	//Display form to create new album
 	$('#create_new_album').live("click", function() {
 		$('#welcome').fadeOut('fast', function() {
