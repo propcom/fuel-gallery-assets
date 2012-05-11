@@ -1,0 +1,101 @@
+.header-icon {
+	margin-top: 2px;
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=7);
+}
+
+.sidebar-nav {
+	padding: 8px 0;
+}
+
+#album_info {
+	padding:20px;
+	margin: 0px;
+}
+
+.form-inline, .inline {
+	display:inline;
+}
+
+.form-inline input {
+	width:180px;
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+}
+
+.album_live {
+	width:215px;
+	float: left;
+}
+
+.del-alb {
+	margin-bottom: 9px;
+}
+
+
+.iPhoneCheckContainer {
+	margin-top:1px;
+}
+
+.icon-star-empty{
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=5);
+}
+
+#droparea {
+	border:4px dashed #AAA;
+	margin:10px 0px;
+	padding: 30px;
+}
+
+.hover {
+	border:4px dashed #83b4d8 !important;
+	background-color: #EEC !important;
+}
+
+.file {
+	padding:5px;
+}
+
+.image {
+	padding: 10px 20px 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: whiteSmoke;
+	border-top: 1px solid #DDD;
+	min-height: 102px;
+}
+
+.image .thumbnail {
+	margin-right: 10px;
+	float: left;
+}
+
+.image h4 {
+	margin-bottom: 10px;
+	padding-top: 25px;
+}
+
+.image i {
+	margin-top: 50px;
+	margin-right: 20px;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	filter:alpha(opacity=6);
+}
+
+.green {
+	color: #468847 !important;
+	border-color: #468847 !important;
+}
+
+p#looser {
+	display:none;
+}
+
+p#looser span {
+	text-decoration:line-through;
+}
