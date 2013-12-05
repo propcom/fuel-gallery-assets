@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 		containes: 'plupload',
 		drop_element: 'droparea',
 		browse_button: 'browse',
-		url: 'ajax/plupload',
+		url: '/admin/gallery/ajax/plupload',
 		flash_swf_url: '/assets/gallery/js/plupload/plupload.flash.swf',
 		multipart: true,
 		urlstream_upload: true,
@@ -57,7 +57,8 @@ jQuery(document).ready(function($) {
 
 	//Alert errors (filesize, formats...)
 	uploader.bind('Error', function(up, err){
-		alert(err.message);
+		//console.log( up, err );
+		//alert(err.message);
 		uploader.refresh();
 		$('#droparea').removeClass('hover');
 	});
