@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
 
 			var album = elem.attr('data-album-id');
 					
-			$.post('ajax/set_status', { album_id: album, live: value }, function(data) {
+			$.post('/admin/gallery/ajax/set_status', { album_id: album, live: value }, function(data) {
 				
 				//Hide the star
 				$('ul.nav li#'+album+" a i").hide();
@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
 		var name = $('#album_name').val();
 		
 		
-		$.post('ajax/album_name', { album_id: album, name: name }, function(data) {
+		$.post('/admin/gallery/ajax/album_name', { album_id: album, name: name }, function(data) {
 
 			var album = $('#album_info').attr('data-active-album');
 
@@ -81,7 +81,7 @@ jQuery(document).ready(function($) {
 
 		var caption = $(this);		
 		
-		$.post('ajax/img_caption', { id: caption.attr('id'), caption: caption.val() }, function(data) {
+		$.post('/admin/gallery/ajax/img_caption', { id: caption.attr('id'), caption: caption.val() }, function(data) {
 
 			caption.addClass('green');
 			setTimeout(function () {
@@ -97,7 +97,7 @@ jQuery(document).ready(function($) {
 
 		var album = $('#album_info').attr('data-active-album');
 
-		$.post('ajax/sort_imgs', { album_id: album, order: $(this).sortable('toArray') }, function(data) {
+		$.post('/admin/gallery/ajax/sort_imgs', { album_id: album, order: $(this).sortable('toArray') }, function(data) {
 			return true;
 		});
 	});
@@ -107,7 +107,7 @@ jQuery(document).ready(function($) {
 		var answer = confirm("Are you sure?");
 		if(answer){
 			var img = $(this);
-			$.post('ajax/del_img', { id: img.parent().attr('id') }, function(data) {
+			$.post('/admin/gallery/ajax/del_img', { id: img.parent().attr('id') }, function(data) {
 				img.parent().effect('blind');
 			});
 		}
