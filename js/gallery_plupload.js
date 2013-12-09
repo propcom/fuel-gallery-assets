@@ -57,8 +57,6 @@ jQuery(document).ready(function($) {
 
 	//Alert errors (filesize, formats...)
 	uploader.bind('Error', function(up, err){
-		//console.log( up, err );
-		//alert(err.message);
 		uploader.refresh();
 		$('#droparea').removeClass('hover');
 	});
